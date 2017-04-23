@@ -1,0 +1,49 @@
+{
+  "name": "node-push-notification",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src/app.js",
+    "prestart": "babel src --out-dir dist",
+    "start": "npm run prestart && node bootstrap.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apicache": "^0.8.4",
+    "babel-cli": "^6.11.4",
+    "babel-register": "^6.9.0",
+    "base64-img": "^1.0.3",
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.17.1",
+    "es6-module-loader": "^0.17.11",
+    "exponent-server-sdk": "^2.3.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.0",
+    "gm": "^1.23.0",
+    "jsonwebtoken": "^7.1.9",
+    "lodash": "^4.15.0",
+    "lwip": "0.0.9",
+    "mailgun-js": "^0.7.12",
+    "mongoose": "^4.9.5",
+    "morgan": "^1.7.0",
+    "node-fetch": "^1.6.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-jwt": "^2.1.0",
+    "passport-local": "^1.0.0",
+    "querystring": "^0.2.0",
+    "request": "^2.78.0",
+    "validator": "^5.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "nodemon": "^1.9.2"
+  }
+}
