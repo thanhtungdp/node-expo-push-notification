@@ -34,7 +34,7 @@ app.post('/register-token-device', secretCodeMiddleware, registerTokenDevice)
 
 ### Mobile app config
 ```javascript
-// constants/app
+// constants/app.js
 
 // localhost change thì địa chỉ IP của wifi
 export const NOTIFICATION = {
@@ -47,3 +47,5 @@ export const NOTIFICATION = {
 1. Khi App run trên device của user, thì sẽ yêu cầu truy cập push notifiation. Nếu user đồng ý, thì sẽ gửi token về `/register-token-device` kèm với secret code, sau đó sẽ được lưu trong mongodb.
 2. Để xem danh sách tokenDevice truy cập `/list-token-device`.
 3. Gửi thử 1 notification bằng POSTMAN
+
+![demo notification](http://sv1.upsieutoc.com/2017/04/24/ScreenShot2017-04-24at00.40.11.png)
