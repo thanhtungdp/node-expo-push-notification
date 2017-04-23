@@ -12,7 +12,7 @@ async function pushNotification(req, res) {
 	const {message, data, tokenDevice} = req.body;
 	try {
 		let receipts = await expo.sendPushNotificationsAsync([{
-			to: `ExponentPushToken[${tokenDevice}]`,
+			to: tokenDevice,
 			sound: 'default',
 			body: message,
 			data: data

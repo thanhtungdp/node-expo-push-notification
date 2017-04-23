@@ -23,7 +23,7 @@ app.get('/list-token-device', listTokenDevice)
  * @message: string
  * @data: object
  */
-app.post('/push-notifcation', pushNotification);
+app.post('/push-notification', pushNotification);
 
 /**
  * Register token device
